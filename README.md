@@ -143,6 +143,10 @@ The final classification layer used a sigmoid activation for binary output and B
 - RMSprop performed slightly worse than Adam across all trials.
 - Increasing batch size to 32 helped the best-performing model generalize better.
 
+*Segmentation Task:*
+- In traditional methods, the case is that for each image you need to adjust the parameters by trail and error to get the best direction. Thus in such cases we saw that traditional methods that have an algorithmic approach such as Otsu' thresholding as they are better to use rather than those that require individual adjustments such as canny edge detector etc.
+- 
+
 ---
 
 ## ▶️ How to Run the Code
