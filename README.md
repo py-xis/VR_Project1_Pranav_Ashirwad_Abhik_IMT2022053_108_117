@@ -149,6 +149,30 @@ The final classification layer used a sigmoid activation for binary output and B
 
 ---
 
+---
+### Challenges Faced
+A. Binary Classification using Handcrafted Features + ML Classifiers
+Feature quality depends on image conditions
+The handcrafted features (like HOG, LBP) did not work well when images had different lighting or face angles.
+
+Time-consuming feature extraction
+Extracting features for all images took a lot of time and added extra steps before training.
+
+B. Binary Classification using CNN
+Limited access to GPU
+Training CNNs locally was slow due to lack of a powerful GPU. We used Kaggle's free GPU environment for faster training.
+
+Slow training and tuning
+Testing different learning rates, batch sizes, and optimizers took time because each run had to be trained separately.
+
+Risk of overfitting
+Since the dataset was small, the model sometimes performed very well on training data but not as well on test data.
+
+Early bias in training
+In early training epochs, the model favored one class more than the other, which affected the balance of predictions.
+
+C. 
+
 ## ▶️ How to Run the Code
 
 1. Clone this repository
