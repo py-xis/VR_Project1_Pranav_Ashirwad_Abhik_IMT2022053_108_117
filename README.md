@@ -148,9 +148,12 @@ The final classification layer used a sigmoid activation for binary output and B
 ## ▶️ How to Run the Code
 
 1. Clone this repository
-2. Set up environment:
-
+2. Please ensure that you download the dataset mentioned in the above sections and ensure that it is in the root of the directory.
+3. Set up environment:
+   Ensure that you have python installed.
+   ```
    pip install torch torchvision torchinfo opencv-python pillow matplotlib scikit-learn pandas numpy
-3. Run binary classification notebook (handcrafted + CNN):
-4. Run segmentation notebook (traditional + U-Net):
+   ```
+5. Run binary classification notebook (handcrafted + CNN):
+6. Run segmentation notebook (traditional + U-Net):
 
