@@ -145,8 +145,7 @@ The final classification layer used a sigmoid activation for binary output and B
 
 *Segmentation Task:*
 - In traditional methods, the case is that for each image you need to adjust the parameters by trail and error to get the best direction. Thus in such cases we saw that traditional methods that have an algorithmic approach such as Otsu' thresholding as they are better to use rather than those that require individual adjustments such as canny edge detector etc.
-- 
-
+- U-Net produces significantly smoother and more precise mask boundaries compared to Otsu’s thresholding.
 ---
 
 ---
@@ -171,7 +170,8 @@ Since the dataset was small, the model sometimes performed very well on training
 Early bias in training
 In early training epochs, the model favored one class more than the other, which affected the balance of predictions.
 
-C. 
+C. While implementing the UNet Segmentation model, the computation was very slow on CPU. Hence we shifted to Kaggle and used two T4 in parallel using pytorch's parallel computation capabilities and 
+---
 
 ## ▶️ How to Run the Code
 
