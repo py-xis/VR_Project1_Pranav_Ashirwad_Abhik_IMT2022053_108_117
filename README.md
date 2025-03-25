@@ -150,7 +150,7 @@ The final classification layer used a sigmoid activation for binary output and B
 1. Clone this repository
 2. Set up environment:
 
-   pip install
+   pip install torch torchvision torchinfo opencv-python pillow matplotlib scikit-learn pandas numpy
 3. Run binary classification notebook (handcrafted + CNN):
 4. Run segmentation notebook (traditional + U-Net):
-5. 
+
